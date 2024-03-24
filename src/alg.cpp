@@ -25,13 +25,13 @@ int cbinsearch(int *arr, int size, int value) {
         } else {
             right = mid - 1;
         }
-    }  
+    }
     return count;
 }
 int main() {
     int arr[] = {1, 2, 2, 3, 4, 5, 5, 5, 6};
     int size = sizeof(arr) / sizeof(arr[0]);
     int value = 5;
-    std::cout << "Number of occurrences of " << value << ": " << cbinsearch(arr, size, value) << std::endl;
-  return 0; 
+    std::cout << value << ": " << cbinsearch(arr, size, value) << std::endl;
+  return 0;
 }
